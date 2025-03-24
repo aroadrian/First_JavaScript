@@ -30,7 +30,11 @@
 //students /= 2;
 //students **= 2;
 //students %= 2;
+//let result = 12 % 5 + 8 / 2;
 
-let result = 12 % 5 + 8 / 2;
+let username;
 
-console.log(result);
+document.getElementById('mySubmit').onclick = function () {
+    username = document.getElementById('myText').value;
+    document.getElementById('myH1').textContent = `Hello ${username}`;
+};
