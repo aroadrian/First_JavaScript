@@ -32,9 +32,27 @@
 //students %= 2;
 //let result = 12 % 5 + 8 / 2;
 
-let username;
+//let username;
 
-document.getElementById('mySubmit').onclick = function () {
-    username = document.getElementById('myText').value;
-    document.getElementById('myH1').textContent = `Hello ${username}`;
-};
+//document.getElementById('mySubmit').onclick = function () {
+ //   username = document.getElementById('myText').value;
+ //   document.getElementById('myH1').textContent = `Hello ${username}`;
+//};
+
+let age = window.prompt('What is your age?');
+age = Number(age);
+age += 1;
+
+console.log(age, typeof age);
+
+let x = "Pizza";
+let y = "Pizza";
+let z = "Pizza";
+
+x = String(x);
+y = Number(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y); 
+console.log(z, typeof z);
