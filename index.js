@@ -53,14 +53,37 @@
 //console.log(y, typeof y); 
 //console.log(z, typeof z);
 
-const PI = 3.14159;
-let raduis;
-let circumference;
+//const PI = 3.14159;
+//let raduis;
+//let circumference;
 
 
-document.getElementById('mySubmit').onclick = function () {
-    raduis = document.getElementById('myText').value;
-    raduis = Number(raduis);
-    circumference = 2 * PI * raduis;
-    document.getElementById('myH3').textContent = `The circumference is ${circumference}` + 'cm';
+//document.getElementById('mySubmit').onclick = function () {
+   // raduis = document.getElementById('myText').value;
+    //raduis = Number(raduis);
+   // circumference = 2 * PI * raduis;
+    //document.getElementById('myH3').textContent = `The circumference is ${circumference}` + 'cm';
+//};
+
+//Counter Program
+
+const decreaseBtn = document.getElementById('decreaseBtn');
+const resetBtn  = document.getElementById('resetBtn');
+const increaseBtn = document.getElementById('increaseBtn');
+const countLabel = document.getElementById('countLabel');
+let count = 0;
+
+increaseBtn.onclick = function () {
+    count++;
+    countLabel.textContent = count;
+};
+
+decreaseBtn.onclick = function () {
+    count--;
+    countLabel.textContent = count;
+};
+
+resetBtn.onclick = function () {
+    count = 0;
+    countLabel.textContent = count;
 };
