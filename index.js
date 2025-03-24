@@ -39,20 +39,28 @@
  //   document.getElementById('myH1').textContent = `Hello ${username}`;
 //};
 
-let age = window.prompt('What is your age?');
-age = Number(age);
-age += 1;
+//let age = window.prompt('What is your age?');
+//age = Number(age);
+//age += 1;
+//console.log(age, typeof age);
+//let x = "Pizza";
+//let y = "Pizza";
+//let z = "Pizza";
+//x = String(x);
+//y = Number(y);
+//z = Boolean(z);
+//console.log(x, typeof x);
+//console.log(y, typeof y); 
+//console.log(z, typeof z);
 
-console.log(age, typeof age);
+const PI = 3.14159;
+let raduis;
+let circumference;
 
-let x = "Pizza";
-let y = "Pizza";
-let z = "Pizza";
 
-x = String(x);
-y = Number(y);
-z = Boolean(z);
-
-console.log(x, typeof x);
-console.log(y, typeof y); 
-console.log(z, typeof z);
+document.getElementById('mySubmit').onclick = function () {
+    raduis = document.getElementById('myText').value;
+    raduis = Number(raduis);
+    circumference = 2 * PI * raduis;
+    document.getElementById('myH3').textContent = `The circumference is ${circumference}` + 'cm';
+};
