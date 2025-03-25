@@ -245,19 +245,33 @@
 
 //console.log(`Hello ${userName}`);
 
-let loggedIn = false;
-let username;
-let password;
+//let loggedIn = false;
+//let username;
+//let password;
 
-while(!loggedIn){
-    username = window.prompt(`Enter your username`);
-    password = window.prompt(`Enter your password`);
+//while(!loggedIn){
+ //   username = window.prompt(`Enter your username`);
+ //   password = window.prompt(`Enter your password`);
 
-    if (username === "admin" && password === "password"){
-        loggedIn = true;
-        console.log(`You are logged in! ${username}`);
+ //   if (username === "admin" && password === "password"){
+   //     loggedIn = true;
+    //    console.log(`You are logged in! ${username}`);
+   // }
+    //else{
+    //    console.log(`Invalid username or password`);
+    //}
+//}
+
+//for loop
+
+for (let i = 1; i <= 20; i++){
+    if(i === 13){
+       // continue
+        break
     }
     else{
-        console.log(`Invalid username or password`);
+        console.log(i);
     }
+    
 }
+console.log("Blast off!");
