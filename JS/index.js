@@ -226,11 +226,38 @@
 
 //logical operators
 
-const temp = 100;
+//const temp = 100;
 
-if (temp > 0 && temp <=30){
-    console.log("The temperature is good");
-}
-else{
-    console.log("The temperature is bad");
+//if (temp > 0 && temp <=30){
+ //   console.log("The temperature is good");
+//}
+//else{
+ //   console.log("The temperature is bad");
+//}
+
+//While Loop
+
+//let userName;
+
+//do{
+ //   userName = window.prompt(`Enter your username`);
+//}while(userName === "" || userName === null)
+
+//console.log(`Hello ${userName}`);
+
+let loggedIn = false;
+let username;
+let password;
+
+while(!loggedIn){
+    username = window.prompt(`Enter your username`);
+    password = window.prompt(`Enter your password`);
+
+    if (username === "admin" && password === "password"){
+        loggedIn = true;
+        console.log(`You are logged in! ${username}`);
+    }
+    else{
+        console.log(`Invalid username or password`);
+    }
 }
