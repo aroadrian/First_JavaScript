@@ -198,9 +198,28 @@
 //console.log(firstChar);
 //console.log(lastChar);
 
-const email = "adrian@gmail.com";
+//const email = "adrian@gmail.com";
 
-let userName = email.slice(0, email.indexOf("@"));
-let extension = email.slice(email.indexOf("@") + 1);
+//let userName = email.slice(0, email.indexOf("@"));
+//let extension = email.slice(email.indexOf("@") + 1);
+//console.log(userName);
+//console.log(extension);
+
+// Method Chaining
+
+//no method chaining
+let userName = window.prompt("Enter your username");
+
+userName = userName.trim();
+let letter = userName.charAt(0);
+letter = letter.toUpperCase();
+
+let extraChars = userName.slice(1);
+extraChars = extraChars.toLowerCase();
+userName = letter + extraChars;
 console.log(userName);
-console.log(extension);
+
+// method chaining
+
+userName = userName.trim().charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+console.log(userName);
