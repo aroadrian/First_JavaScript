@@ -208,18 +208,29 @@
 // Method Chaining
 
 //no method chaining
-let userName = window.prompt("Enter your username");
+//let userName = window.prompt("Enter your username");
 
-userName = userName.trim();
-let letter = userName.charAt(0);
-letter = letter.toUpperCase();
+//userName = userName.trim();
+//let letter = userName.charAt(0);
+//letter = letter.toUpperCase();
 
-let extraChars = userName.slice(1);
-extraChars = extraChars.toLowerCase();
-userName = letter + extraChars;
-console.log(userName);
+//let extraChars = userName.slice(1);
+//extraChars = extraChars.toLowerCase();
+//userName = letter + extraChars;
+//console.log(userName);
 
 // method chaining
 
-userName = userName.trim().charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
-console.log(userName);
+//userName = userName.trim().charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+//console.log(userName);
+
+//logical operators
+
+const temp = 100;
+
+if (temp > 0 && temp <=30){
+    console.log("The temperature is good");
+}
+else{
+    console.log("The temperature is bad");
+}
