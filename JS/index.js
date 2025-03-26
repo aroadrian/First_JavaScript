@@ -289,22 +289,35 @@
 
 //happyBirthday("Adrian", 26);
 
-function add(x, y){
-    let result = x + y;
-    return result;
+//function add(x, y){
+ //   let result = x + y;
+ //  return result;
+//}
+
+//function isEven(number){
+//  return number % 2 === 0 ? true : false;
+//}
+
+//function isValidEmail(email){
+ // if(email.includes('@')){
+  //  return true;
+  //}
+  //else{
+  //  return false;
+  //}
+//}
+
+//console.log(isValidEmail("adrian@gmail.com"));
+
+// Variable Scope
+
+function2();
+function function1(){
+  let x = 1;
+  console.log(x);
 }
 
-function isEven(number){
-  return number % 2 === 0 ? true : false;
+function function2(){
+  let x = 2;
+  console.log(x);
 }
-
-function isValidEmail(email){
-  if(email.includes('@')){
-    return true;
-  }
-  else{
-    return false;
-  }
-}
-
-console.log(isValidEmail("adrian@gmail.com"));
