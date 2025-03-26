@@ -365,7 +365,7 @@ const matrix = [[1, 2, 3],
 //matrix[2][0] = 'x';
 //matrix[2][1] = 'o';
 //matrix[2][2] = 'x';
-for(let row of matrix){
-  const rowString = row.join(' ');
-  console.log(rowString);
-}
+//for(let row of matrix){
+  //const rowString = row.join(' ');
+  //console.log(rowString);
+//}
