@@ -264,14 +264,47 @@
 
 //for loop
 
-for (let i = 1; i <= 20; i++){
-    if(i === 13){
-       // continue
-        break
-    }
-    else{
-        console.log(i);
-    }
+//for (let i = 1; i <= 20; i++){
+   // if(i === 13){
+      // continue
+ // / //     break
+   // }
+   // else{
+   //     console.log(i);
+    //}
     
+//}
+//console.log("Blast off!");
+
+//Function
+
+//function happyBirthday(username, age){
+ // console.log("Happy Birthday!");
+ // console.log("Happy Birthday!");
+ // console.log(`Happy Birthday ${username}`);
+ // console.log("Happy Birthday!");
+ // console.log(`You are ${age} years old`);
+ // console.log("Happy Birthday!");
+//};
+
+//happyBirthday("Adrian", 26);
+
+function add(x, y){
+    let result = x + y;
+    return result;
 }
-console.log("Blast off!");
+
+function isEven(number){
+  return number % 2 === 0 ? true : false;
+}
+
+function isValidEmail(email){
+  if(email.includes('@')){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+console.log(isValidEmail("adrian@gmail.com"));
