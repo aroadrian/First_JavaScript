@@ -324,7 +324,7 @@
 
 //Array
 
-let fruits = ["apple", "orange", "banana", "coconut"];
+//let fruits = ["apple", "orange", "banana", "coconut"];
 
 //for(let i = 0; i < fruits.length; i++){
  // console.log(fruits[i]);
@@ -333,10 +333,10 @@ let fruits = ["apple", "orange", "banana", "coconut"];
 //for(let i = fruits.length - 1; i >= 0; i--){
 //  console.log(fruits[i]);
 //}
-fruits.sort().reverse();
-for(let fruit of fruits){
-  console.log(fruit);
-}
+//fruits.sort().reverse();
+//for(let fruit of fruits){
+ // console.log(fruit);
+//}
 
 //fruits.push("coconut");
 //fruits.pop();
@@ -345,3 +345,27 @@ for(let fruit of fruits){
 
 //let numOfFruits = fruits.length;
 //let index = fruits.indexOf("apple");
+
+
+//2D array
+
+const matrix = [[1, 2, 3],
+               [4, 5, 6],
+               [7, 8, 9],
+               ['*', 0, '#']]
+
+//matrix[0][0] = 'x';
+//matrix[0][1] = 'o';
+//matrix[0][2] = 'x';
+
+//matrix[1][0] = 'o';
+//matrix[1][1] = 'x';
+//matrix[1][2] = 'o';
+
+//matrix[2][0] = 'x';
+//matrix[2][1] = 'o';
+//matrix[2][2] = 'x';
+for(let row of matrix){
+  const rowString = row.join(' ');
+  console.log(rowString);
+}
