@@ -21,8 +21,9 @@
     background-color: #333;
 }
 body{
-    font-family: Verdana;
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: rgb(218, 212, 212);
 }
 #myButton{
     font-size: 3em;
@@ -33,5 +34,48 @@ body{
     display: flex;
     justify-content: center;
     font-size: 3em;
+    font-weight: bold;
+}
+h1{
+    color: rgb(20, 74, 92);
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(161, 157, 157);
+}
+
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(48, 43, 43, 0.39);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    background-color: aquamarine;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(36, 123, 94);;
+}
+#result{
+    font-size: 1.5em;
     font-weight: bold;
 }
