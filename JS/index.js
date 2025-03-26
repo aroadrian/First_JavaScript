@@ -311,13 +311,37 @@
 
 // Variable Scope
 
-function2();
-function function1(){
-  let x = 1;
-  console.log(x);
+//function2();
+//function function1(){
+  //let x = 1;
+ // console.log(x);
+//}
+
+//function function2(){
+ // let x = 2;
+ // console.log(x);
+//}
+
+//Array
+
+let fruits = ["apple", "orange", "banana", "coconut"];
+
+//for(let i = 0; i < fruits.length; i++){
+ // console.log(fruits[i]);
+//}
+
+//for(let i = fruits.length - 1; i >= 0; i--){
+//  console.log(fruits[i]);
+//}
+fruits.sort().reverse();
+for(let fruit of fruits){
+  console.log(fruit);
 }
 
-function function2(){
-  let x = 2;
-  console.log(x);
-}
+//fruits.push("coconut");
+//fruits.pop();
+//fruits.unshift("mango");
+//fruits.shift();
+
+//let numOfFruits = fruits.length;
+//let index = fruits.indexOf("apple");
