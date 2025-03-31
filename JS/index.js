@@ -516,12 +516,28 @@
 
 // map()
 
-const numbers = [1, 2, 3, 4, 5];
+///const numbers = [1, 2, 3, 4, 5];
 
-const squares = numbers.map(square);
+//const squares = numbers.map(square);
 
-console.log(squares);
+//console.log(squares);
 
-function square(element){
-  return Math.pow(element, 2);
+//function square(element){
+ // return Math.pow(element, 2);
+//}
+
+//filter method
+
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+let evenNums = numbers.filter(isEven);
+let oddNums = numbers.filter(isOdd);
+
+console.log(oddNums);
+
+function isEven(element){
+    return element % 2 === 0;
+}
+
+function isOdd(element){
+  return element % 2 !== 0;
 }
