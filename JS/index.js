@@ -384,8 +384,55 @@
 
 //console.log(letters);
 
-let fruits = ["apple", "banana", "orange"];
-let vegetables = ["carrots", "celery", "potatoes"];
-let foods = [...fruits, ...vegetables, "eggs", "milk"];
+//let fruits = ["apple", "banana", "orange"];
+//let vegetables = ["carrots", "celery", "potatoes"];
+//let foods = [...fruits, ...vegetables, "eggs", "milk"];
 
-console.log(foods);
+//console.log(foods);
+
+// rest parameters
+
+//function openFridge(...foods){
+ // console.log(foods);
+//}
+
+//function getFood(...foods){
+ // return foods;
+//}
+
+//const food1 = "pizza";
+//const food2 = "hotdog";
+//const food3 = "fishball";
+//const food4 = "fries";
+
+//openFridge(food1, food2, food3, food4);
+
+//const foods = getFood(food1, food2, food3, food4);
+
+//console.log(foods);
+
+//function sum(...numbers){
+ //   let result = 0;
+ //   for (let number of numbers){
+  //    result += number;
+  //  }
+  //  return result;
+//}
+
+//function getAverage(...numbers){
+ //  let result = 0;
+   // for (let number of numbers){
+   //   result += number;
+   // }
+   // return result / numbers.length;
+//}
+//const total = getAverage(96, 97, 98, 96, 94);
+
+//console.log(`Your total is ${total}`);
+
+function combineString(...strings){
+    return strings.join(" ");
+}
+
+const fullname = combineString("Mr.", "Adrian", "Christopher", "Aro");
+console.log(fullname);
