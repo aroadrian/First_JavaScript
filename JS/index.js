@@ -544,12 +544,12 @@
 
 //reduce method
 
-//const prices = [5, 10, 30, 25, 15, 20];
+const prices = [5, 10, 30, 25, 15, 20];
 
-//const total = prices.reduce(sum);
+const total = prices.reduce(sum);
 
-//console.log(total);
+console.log(total);
 
-//function sum(accumulator, element){
- //  return accumulator + element;
-//}
+function sum(accumulator, element){
+   return accumulator + element;
+}
