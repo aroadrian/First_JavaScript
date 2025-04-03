@@ -707,6 +707,13 @@ class User{
         this.username = username;
         User.userCount ++;
     }
+
+    static getUserCount(){
+        console.log(`online is ${User.userCount}`);
+    }
+    sayHello(){
+      console.log(`Hello ${this.username}`);
+    }
 }
 
 const user1 = new User("adrian");
@@ -714,5 +721,9 @@ const user2 = new User("adrian");
 const user3 = new User("adrian");
 const user4 = new User("adrian");
 
+user1.sayHello();
+User.getUserCount();
+
 console.log(user1.username);
+console.log(User.userCount);
 console.log(User.userCount);
