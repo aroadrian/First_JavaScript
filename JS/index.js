@@ -660,29 +660,59 @@
 
 //Classes
 
-class Product{
-    constructor(name, price){
-        this.name = name,
-        this.price = price
+//class Product{
+  //  constructor(name, price){
+  //     this.name = name,
+   //     this.price = price
+   // }
+
+    //displayProduct(){
+    //  console.log(`Product ${this.name}`);
+   //   console.log(`Price ${this.price.toFixed(2)}`);
+   // }
+
+   // calculateTotal(salesTax){
+    //   return this.price +  (this.price * salesTax);
+   // }
+//};
+
+//const salesTax = 0.05;
+
+//const product1 = new Product("short", 255);
+//const product2 = new Product("shirtt", 255);
+
+//product1.displayProduct();
+//product2.displayProduct();
+
+//const total = product1.calculateTotal(salesTax);
+//console.log(`Total ${total}`);
+
+// Static
+
+//class MathUtil{
+   // static PI = 3.14159;
+
+  //  static getDiameter(raduis){
+  //      return raduis * 2;
+   // }
+//}
+
+//console.log(MathUtil.PI);
+//console.log(MathUtil.getDiameter(10));
+
+class User{
+    static userCount = 0;
+
+    constructor(username){
+        this.username = username;
+        User.userCount ++;
     }
+}
 
-    displayProduct(){
-      console.log(`Product ${this.name}`);
-      console.log(`Price ${this.price.toFixed(2)}`);
-    }
+const user1 = new User("adrian");
+const user2 = new User("adrian");
+const user3 = new User("adrian");
+const user4 = new User("adrian");
 
-    calculateTotal(salesTax){
-       return this.price +  (this.price * salesTax);
-    }
-};
-
-const salesTax = 0.05;
-
-const product1 = new Product("short", 255);
-const product2 = new Product("shirtt", 255);
-
-product1.displayProduct();
-product2.displayProduct();
-
-const total = product1.calculateTotal(salesTax);
-console.log(`Total ${total}`);
+console.log(user1.username);
+console.log(User.userCount);
