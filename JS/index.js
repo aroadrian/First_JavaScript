@@ -642,18 +642,47 @@
 
 // Constructor
 
-function Car(make, model, year, color){
-    this.make = make,
-    this.model = model,
-    this.year = year,
-    this.color = color
-    this.drive = function (){console.log(`You drive the ${this.model}`)}
-}
+//function Car(make, model, year, color){
+//    this.make = make,
+//    this.model = model,
+//    this.year = year,
+ //   this.color = color
+//    this.drive = function (){console.log(`You drive the ${this.model}`)}
+//}
 
-const car1 = new Car("Corolla", "Big Body", 1998, "Green");
-console.log(car1.make);
-console.log(car1.model);
-console.log(car1.year);
-console.log(car1.color);
+//const car1 = new Car("Corolla", "Big Body", 1998, "Green");
+//console.log(car1.make);
+//console.log(car1.model);
+///console.log(car1.year);
+//console.log(car1.color);
 
-car1.drive();
+//car1.drive();
+
+//Classes
+
+class Product{
+    constructor(name, price){
+        this.name = name,
+        this.price = price
+    }
+
+    displayProduct(){
+      console.log(`Product ${this.name}`);
+      console.log(`Price ${this.price.toFixed(2)}`);
+    }
+
+    calculateTotal(salesTax){
+       return this.price +  (this.price * salesTax);
+    }
+};
+
+const salesTax = 0.05;
+
+const product1 = new Product("short", 255);
+const product2 = new Product("shirtt", 255);
+
+product1.displayProduct();
+product2.displayProduct();
+
+const total = product1.calculateTotal(salesTax);
+console.log(`Total ${total}`);
