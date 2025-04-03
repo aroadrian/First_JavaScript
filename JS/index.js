@@ -567,17 +567,31 @@
  // console.log("hello");
 //},3000);
 
+//const numbers = [1, 2, 3, 4, 5, 6];
+//const squares = numbers.map(function(element){
+  //return Math.pow(element, 2);
+//});
+
+//const evenNum = numbers.filter(function(element){
+  //  return element % 2 === 0;
+//})
+
+//const total = numbers.reduce(function(accumulator, element){
+  //  return accumulator + element;
+//}//)
+
+//console.log(total);
+
+//Arrow Function
+
+//const hello = (name, age) => {console.log(`Hello ${name}`)
+   //                             console.log(`Your ${age}`)
+   //                           };
+//hello("Adrian", 26);
+//setTimeout(() => console.log("hello"), 3000);
+
+
 const numbers = [1, 2, 3, 4, 5, 6];
-const squares = numbers.map(function(element){
-  return Math.pow(element, 2);
-});
 
-const evenNum = numbers.filter(function(element){
-    return element % 2 === 0;
-})
-
-const total = numbers.reduce(function(accumulator, element){
-    return accumulator + element;
-})
-
-console.log(total);
+const squares = numbers.map((element) => Math.pow(element, 2));
+console.log(squares);
