@@ -700,30 +700,59 @@
 //console.log(MathUtil.PI);
 //console.log(MathUtil.getDiameter(10));
 
-class User{
-    static userCount = 0;
+//class User{
+ //   static userCount = 0;
 
-    constructor(username){
-        this.username = username;
-        User.userCount ++;
-    }
+ //   constructor(username){
+  //      this.username = username;
+   //     User.userCount ++;
+   // }
 
-    static getUserCount(){
-        console.log(`online is ${User.userCount}`);
-    }
-    sayHello(){
-      console.log(`Hello ${this.username}`);
-    }
+   // static getUserCount(){
+   //     console.log(`online is ${User.userCount}`);
+   // }
+   // sayHello(){
+   //   console.log(`Hello ${this.username}`);
+   // }
+//}
+
+//const user1 = new User("adrian");
+//const user2 = new User("adrian");
+//const user3 = new User("adrian");
+//const user4 = new User("adrian");
+
+//user1.sayHello();
+//User.getUserCount();
+
+//console.log(user1.username);
+//console.log(User.userCount);
+//console.log(User.userCount);
+
+
+// Inheritance
+
+class Animal{
+
+  alive = true;
+
+  eat(){
+    console.log(`this ${this.name}`);
+  }
+  sleep(){
+    console.log(`this ${this.name}`);
+  }
 }
 
-const user1 = new User("adrian");
-const user2 = new User("adrian");
-const user3 = new User("adrian");
-const user4 = new User("adrian");
+class Rabbit extends Animal{
+    name = 'Rabbits';
+}
 
-user1.sayHello();
-User.getUserCount();
+class Fish extends Animal{
+  name = 'FIsh';
+}
 
-console.log(user1.username);
-console.log(User.userCount);
-console.log(User.userCount);
+const rabbit = new Rabbit
+const fish = new Fish
+
+console.log(rabbit.alive);
+rabbit.eat();
