@@ -632,10 +632,25 @@
 
 //THIS
 
-const person1 ={
-                 name: "Adrian",
-                 favFood: "Burger",
-                 sayHello: function (){ console.log(`Hi I'm ${this.name}`) }
-                };
+//const person1 ={
+ //                name: "Adrian",
+ //               favFood: "Burger",
+   //              sayHello: function (){ console.log(`Hi I'm ${this.name}`) }
+   //             };
 
-person1.sayHello();
+//person1.sayHello();
+
+// Constructor
+
+function Car(make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+}
+
+const car1 = new Car("Corolla", "Big Body", 1998, "Green");
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
