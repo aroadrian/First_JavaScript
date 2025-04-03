@@ -598,34 +598,44 @@
 
 // Object
 
-const person1 = {
-                firstName: "Adrian",
-                lastName: "Aro",
-                age: 26,
-                isEmployed: true,   
-                sayHello: function(){console.log("Hi Hello")},
-                eat: () => console.log("pizza"),
+//const person1 = {
+ //               firstName: "Adrian",
+ //               lastName: "Aro",
+  //              age: 26,
+  //              isEmployed: true,   
+  //              sayHello: function(){console.log("Hi Hello")},
+   //             eat: () => console.log("pizza"),
 
-                  };
+   //               };
 
-const person2 = {firstName: "Reslychen",
-                  lastName: "Aro",
-                  age: 26,
-                  isEmployed: false,  
-                  sayHello: () => console.log("Edi wow "),
-                  eat: () => console.log("pizza"),
+//const person2 = {firstName: "Reslychen",
+ //                 lastName: "Aro",
+  //                age: 26,
+   //               isEmployed: false,  
+   //               sayHello: () => console.log("Edi wow "),
+    //              eat: () => console.log("pizza"),
+     //           };
+
+//person1.sayHello();
+//person1.eat();
+//person2.sayHello();
+///person2.eat();
+//console.log(person1.firstName);
+//console.log(person1.lastName);
+//console.log(person1.age);
+//console.log(person1.isEmployed);
+
+//console.log(person2.firstName);
+//console.log(person2.lastName);
+//console.log(person2.age);
+//console.log(person2.isEmployed);
+
+//THIS
+
+const person1 ={
+                 name: "Adrian",
+                 favFood: "Burger",
+                 sayHello: function (){ console.log(`Hi I'm ${this.name}`) }
                 };
 
 person1.sayHello();
-person1.eat();
-person2.sayHello();
-person2.eat();
-console.log(person1.firstName);
-console.log(person1.lastName);
-console.log(person1.age);
-console.log(person1.isEmployed);
-
-console.log(person2.firstName);
-console.log(person2.lastName);
-console.log(person2.age);
-console.log(person2.isEmployed);
