@@ -758,37 +758,84 @@
 
 // Super
 
-class Animal{
-    constructor(name, age){
-      this.name = name;
-      this.age = age;
+//class Animal{
+  //  constructor(name, age){
+  //    this.name = name;
+  //    this.age = age;
+  ///  }
+//}
+
+//class Rabbit extends Animal{
+ // constructor(name, age, runSpeed){
+ //     super(name, age);
+  //    this.runSpeed = runSpeed;
+ // }
+//}
+//class Fish extends Animal{
+ // constructor(name, age, swimSpeed){
+ //   super(name, age);
+ //   this.swimSpeed = swimSpeed;
+//}
+//}
+///class Hawk extends Animal{
+  //constructor(name, age, flySpeed){
+ //   super(name, age);
+ //   this.flySpeed = flySpeed;
+//}
+//}
+
+
+//const rabbit = new Rabbit("Rabbit", 2, 20);
+//const fish = new Fish("Fish", 2, 10);
+//const hawk = new Hawk("Hawk", 2, 30);
+
+//console.log(rabbit.name);
+//console.log(rabbit.age);
+//console.log(rabbit.runSpeed);
+
+
+// Getters and Setters
+
+class Rectangle{
+
+    constructor(width, height){
+        this.width = width;
+        this.height = height;
     }
+
+    set width(newWidth){
+        if(newWidth > 0){
+            this._width = newWidth;
+        }
+        else{
+            console.error("Width must be greater than 0");
+        }
+    }
+
+      set height(newHeight){
+          if(newHeight > 0){
+              this._height = newHeight;
+          }
+          else{
+              console.error("Height must be greater than 0");
+          }
+    }
+
+    get width(){
+        return this._width;
+    }
+
+    get height(){
+        return this._height;
+    }
+    get area(){
+      return this._width * this._height;
+    }
+
 }
 
-class Rabbit extends Animal{
-  constructor(name, age, runSpeed){
-      super(name, age);
-      this.runSpeed = runSpeed;
-  }
-}
-class Fish extends Animal{
-  constructor(name, age, swimSpeed){
-    super(name, age);
-    this.swimSpeed = swimSpeed;
-}
-}
-class Hawk extends Animal{
-  constructor(name, age, flySpeed){
-    super(name, age);
-    this.flySpeed = flySpeed;
-}
-}
+const rectangle = new Rectangle(4, 4);
 
-
-const rabbit = new Rabbit("Rabbit", 2, 20);
-const fish = new Fish("Fish", 2, 10);
-const hawk = new Hawk("Hawk", 2, 30);
-
-console.log(rabbit.name);
-console.log(rabbit.age);
-console.log(rabbit.runSpeed);
+console.log(rectangle.width);
+console.log(rectangle.height);
+console.log(rectangle.area);
