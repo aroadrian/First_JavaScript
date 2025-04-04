@@ -731,28 +731,64 @@
 
 // Inheritance
 
+//class Animal{
+
+ // alive = true;
+
+ // eat(){
+ //   console.log(`this ${this.name}`);
+ // }
+ // sleep(){
+ //   console.log(`this ${this.name}`);
+ // }
+//}
+//class Rabbit extends Animal{
+   // name = 'Rabbits';
+//}
+
+//class Fish extends Animal{
+  //name = 'FIsh';
+//}
+
+//const rabbit = new Rabbit
+//c/onst fish = new Fish
+
+//console.log(rabbit.alive);
+//rabbit.eat();
+
+// Super
+
 class Animal{
-
-  alive = true;
-
-  eat(){
-    console.log(`this ${this.name}`);
-  }
-  sleep(){
-    console.log(`this ${this.name}`);
-  }
+    constructor(name, age){
+      this.name = name;
+      this.age = age;
+    }
 }
 
 class Rabbit extends Animal{
-    name = 'Rabbits';
+  constructor(name, age, runSpeed){
+      super(name, age);
+      this.runSpeed = runSpeed;
+  }
 }
-
 class Fish extends Animal{
-  name = 'FIsh';
+  constructor(name, age, swimSpeed){
+    super(name, age);
+    this.swimSpeed = swimSpeed;
+}
+}
+class Hawk extends Animal{
+  constructor(name, age, flySpeed){
+    super(name, age);
+    this.flySpeed = flySpeed;
+}
 }
 
-const rabbit = new Rabbit
-const fish = new Fish
 
-console.log(rabbit.alive);
-rabbit.eat();
+const rabbit = new Rabbit("Rabbit", 2, 20);
+const fish = new Fish("Fish", 2, 10);
+const hawk = new Hawk("Hawk", 2, 30);
+
+console.log(rabbit.name);
+console.log(rabbit.age);
+console.log(rabbit.runSpeed);
