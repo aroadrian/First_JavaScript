@@ -834,8 +834,8 @@
 
 //}
 
-const rectangle = new Rectangle(4, 4);
+//const rectangle = new Rectangle(4, 4);
 
-console.log(rectangle.width);
-console.log(rectangle.height);
-console.log(rectangle.area);
+//console.log(rectangle.width);
+//console.log(rectangle.height);
+//console.log(rectangle.area);
