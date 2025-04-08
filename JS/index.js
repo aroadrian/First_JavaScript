@@ -839,3 +839,29 @@
 //console.log(rectangle.width);
 //console.log(rectangle.height);
 //console.log(rectangle.area);
+
+
+// Destructuring
+
+function displayPerson({firstName, lastName, age, job = "Unemployed"}){
+        console.log(`name: ${firstName} ${lastName}`);
+        console.log(`age: ${age}`);
+        console.log(`job: ${job}`);
+}
+
+const person1 = {
+        firstName : "Adrian",
+        lastName : "Aro",
+        age: 26,
+        job : "CA",  
+    }
+
+const person2 = {
+        firstName : "Reslychen",
+        lastName : "Aro",
+        age: 26,
+    }
+
+displayPerson(person2);
+
+
