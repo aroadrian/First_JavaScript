@@ -843,25 +843,50 @@
 
 // Destructuring
 
-function displayPerson({firstName, lastName, age, job = "Unemployed"}){
-        console.log(`name: ${firstName} ${lastName}`);
-        console.log(`age: ${age}`);
-        console.log(`job: ${job}`);
+//function displayPerson({firstName, lastName, age, job = "Unemployed"}){
+   //     console.log(`name: ${firstName} ${lastName}`);
+     //   console.log(`age: ${age}`);
+       // console.log(`job: ${job}`);
+//}
+
+//const person1 = {
+  //      firstName : "Adrian",
+    //    lastName : "Aro",
+      //  age: 26,
+        //job : "CA",  
+    //}
+
+//const person2 = {
+  //      firstName : "Reslychen",
+    //    lastName : "Aro",
+      //  age: 26,
+    //}
+
+//displayPerson(person2);
+
+//Nested Object
+
+
+class Person{
+
+    constructor(name, age, ...address){
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
+    }
 }
 
-const person1 = {
-        firstName : "Adrian",
-        lastName : "Aro",
-        age: 26,
-        job : "CA",  
+class Address{
+
+    constructor(street, city, country){
+          this.street = street;
+          this.city = city;
+          this.country = country
     }
+}
 
-const person2 = {
-        firstName : "Reslychen",
-        lastName : "Aro",
-        age: 26,
-    }
-
-displayPerson(person2);
+const person1 = new Person("adrian", 26, "asdasd", "sto.tomas", "PH");
+const person2 = new Person("Reslychen", 26, "asdsd", "Sto.Tomas", "PH");
 
 
+console.log(person1.address.city);
