@@ -894,9 +894,9 @@
 
 // Sort
 
-let numbers = [1, 10, 9, 4, 5, 6, 7, 8, 2, 3];
+//let numbers = [1, 10, 9, 4, 5, 6, 7, 8, 2, 3];
 //let fruits = ["banana", "apple", "orange", "coconut"];
 
-numbers.sort((a, b) => a - b);
+//numbers.sort((a, b) => a - b);
 
-console.log(numbers); 
+//console.log(numbers); 
