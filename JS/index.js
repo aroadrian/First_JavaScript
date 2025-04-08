@@ -902,10 +902,22 @@
 //console.log(numbers); 
 
 
-import {PI, getCircumference, getArea} from './mathUtil.js';
+//import {PI, getCircumference, getArea} from './mathUtil.js';
 
-console.log(PI);
+////console.log(PI);
 
-const circumference = getCircumference(10);
+//const circumference = getCircumference(10);
 
-console.log(circumference);
+//console.log(circumference);
+
+//Error Handling
+
+try{
+  console.log(x);
+}
+catch(error){
+  console.log(error);
+}
+finally{
+  console.log("This will always run");
+}
