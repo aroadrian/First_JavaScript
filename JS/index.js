@@ -867,26 +867,36 @@
 //Nested Object
 
 
-class Person{
+//class Person{
+//
+  //  constructor(name, age, ...address){
+    //    this.name = name;
+      //  this.age = age;
+        //this.address = new Address(...address);
+    //}
+//}
 
-    constructor(name, age, ...address){
-        this.name = name;
-        this.age = age;
-        this.address = new Address(...address);
-    }
-}
+//class Address{
 
-class Address{
+  //  constructor(street, city, country){
+    //      this.street = street;
+      //    this.city = city;
+        //  this.country = country
+  //  /}
+//}/
 
-    constructor(street, city, country){
-          this.street = street;
-          this.city = city;
-          this.country = country
-    }
-}
-
-const person1 = new Person("adrian", 26, "asdasd", "sto.tomas", "PH");
-const person2 = new Person("Reslychen", 26, "asdsd", "Sto.Tomas", "PH");
+//const person1 = new Person("adrian", 26, "asdasd", "sto.tomas", "PH");
+//const person2 = new Person("Reslychen", 26, "asdsd", "Sto.Tomas", "PH");
 
 
-console.log(person1.address.city);
+//console.log(person1.address.city);
+
+
+// Sort
+
+let numbers = [1, 10, 9, 4, 5, 6, 7, 8, 2, 3];
+//let fruits = ["banana", "apple", "orange", "coconut"];
+
+numbers.sort((a, b) => a - b);
+
+console.log(numbers); 
