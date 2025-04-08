@@ -900,3 +900,12 @@
 //numbers.sort((a, b) => a - b);
 
 //console.log(numbers); 
+
+
+import {PI, getCircumference, getArea} from './mathUtil.js';
+
+console.log(PI);
+
+const circumference = getCircumference(10);
+
+console.log(circumference);
