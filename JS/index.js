@@ -912,12 +912,12 @@
 
 //Error Handling
 
-//try{
-  //console.log(x);
-//}
-//catch(error){
- // console.log(error);
-//}
-//finally{
-//console.log("This will always run");
-//}
+try{
+  console.log(x);
+}
+catch(error){
+ console.log(error);
+}
+finally{
+console.log("This will always run");
+}
