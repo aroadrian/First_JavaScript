@@ -912,12 +912,38 @@
 
 //Error Handling
 
-try{
-  console.log(x);
+//try{
+  //console.log(x);
+//}
+//catch(error){
+ // console.log(error);
+//}
+//finally{
+//console.log("This will always run");
+//}
+
+
+const display = document.getElementById("display");
+
+function appendToDisplay(input) {
+  
+    display.value += input;
+
+
 }
-catch(error){
- console.log(error);
+
+function clearDisplay() {
+
+    display.value = "";
+
 }
-finally{
-console.log("This will always run");
+
+function calculate() {
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error!";
+    }
+    
 }
