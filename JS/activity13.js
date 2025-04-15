@@ -7,11 +7,11 @@
 
 //}
 
-//function clearDisplay() {
+function clearDisplay() {
 
-  // display.value = "";
+   display.value = "";
 
-//}
+}
 
 function calculate() {
    try{
